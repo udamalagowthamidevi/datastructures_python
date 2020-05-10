@@ -1,0 +1,21 @@
+#assigning elements to different lists
+lst1=['katherine',4,'elena','klaus',5,90]
+lst2=list()
+for i in lst1:
+    try:
+        j=int(i)
+        lst2.append(j)
+    except:
+        continue
+print(lst2)
+#accessing elementsfrom a tuple
+tup1=('matt','jeremy','bonnie','stefan','damon')
+tup2=('el','mike','dustin','lucas','max')
+print(tup1[:2])
+print(tup2[3:])
+tup3=tup1[2:]+tup2[:3]
+print(tup3)
+#deleting elements from dictionary
+dct={'matt':34,'bonnie':24,'elena':25,'klaus':27,'stefan':36}
+del dct['matt']
+print(dct)
